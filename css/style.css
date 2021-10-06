@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.conteudo {
+    display: flex;
+}
+
+.conteudo-principal {
+    width: 100%;
+}
+
+.cabecalho{
+    font-family: 'Roboto', sans-serif;
+    color:  #725C5C;
+    background-color: #FDF1EB;
+    height: 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+
+.titulo-h6 {
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-left: 3%;
+}
+
+
+.titulo-h3 {
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: -30px;
+    margin-left: 3%;
+    margin-right: -3%
+}
+
+.titulo-numero {
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: -18px;
+    margin-bottom: 0px;
+    margin-left: 3%;
+}
+
+
+.botao-idiomas{
+    background-color: #FDF1EB;
+    color:  #333333;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    width: 100px;
+    height: 35px;
+    margin-left: 20%
+}
+.lista-idiomas {
+    display: none;
+}
+
+.login-principal {
+    display: flex;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    margin-left: -15%;
+    
+}
+
+
+.bemvindo{
+    margin-bottom: 0%;
+    margin-left: 60%;
+    font-weight: 400;
+    font-size: 14px;
+}
+.email{
+    margin-top: 0%;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+
+
+.foto-perfil{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+
+
+.slaca-titulo{
+    height: 80px;
+    text-align: center;
+    padding: 0.1px;
+    background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+    color: #FFF;
+    font-size: 20px; 
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#logo {
+    width: 200px;
+}
+
+
+
+.menu{
+    display:block;
+    width: 15%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color:  rgba(0, 0, 0, 0.25);
+}
+
+
+
+.menu a{
+    margin-left: 10px;
+    text-decoration: none;
+    color:#725C5C;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.opcao-selecionada {
+    background-color: #FDF1EB; 
+    border-left: solid;
+    border-left-color: #ED7839;
+    
+    
+}
+
+.todo-conteudo{
+    display: flex;
+}
+
+.titulo-video{
+    
+    display:flex;
+    flex-direction:column;
+    width: 70%;
+    margin-left: 4%;
+}
+
+.titulo-artigo{
+    font-family: 'Roboto', sans-serif;
+    color: #ED7839;
+    font-size: 20px;
+    font-weight: 900;
+    margin-right: 5%;
+}
