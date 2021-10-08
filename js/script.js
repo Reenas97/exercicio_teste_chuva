@@ -33,3 +33,28 @@ function criaTopico(){
     formulario.style.display ="flex";
     }
 }
+
+function enviaFeedback(){
+    const feedback = document.getElementById("feedbackEnviado");
+    const discussao = document.getElementById("discussao");
+    const formulario = document.getElementById("divFormulario");
+    if (feedback.style.display == "none");{
+        feedback.style.display = "flex";
+        discussao.style.display = "none";
+        formulario.style.display = "none";
+    }
+}
+
+function topicoExpandido(){
+   const respostas2 = document.getElementById("cardTopico2");
+   const respostas = document.getElementById("cardTopico");
+   if (respostas.style.display =="none");{
+    respostas.style.display ="flex";
+   } 
+
+   if (respostas2.style.display =="none");{
+    respostas2.style.display ="flex";
+   } 
+
+
+}

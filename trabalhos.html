@@ -175,63 +175,78 @@
                             <button class ="botao-topico" type="button" onclick="criaTopico()"><img  width="15px" style="margin-right:3px;" src= "./imagens/icon - criar.png">criar tópico</button>
                         </div>
 
-
-                     <!-- FORMULARIO -->
-
-                    <!-- 
-                       <div class ="div-formulario">
-                            <div class ="bloco-formulario">
-                                <h4 class ="titulo-discussao">Discussões</h4>
-                            </div>
-                            <div>
-                                <div>
-                                    <h6 class ="duvida">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</h6>
-                                </div class="campo-formulario">
-                                <form class="formulario">
-                                    <div style="margin-left: 0px;">
-                                        <label class="label">Assunto</label>
-                                        <br>
-                                        <input type="text" name="assunto" id="assunto" placeholder="Defina um tópico sucinto para notificar os autores...">
-                                    </div>
-                                    <div>
-                                        <label class ="label">Conteúdo</label>
-                                        <br>
-                                        <textarea id="conteudo" name="experiencia" data-toggle=""></textarea> 
-                                        <br>
-                                        <div class ="div-botao-formulario">
-                                            <button class="botao-formulario" type="submit">Enviar</button>
-                                        </div>
-                                </div> 
-                                </form>
-                            </div>
-                       </div> -->
-    
-                    
-
-                     <!-- FORMULARIO -->
-
                         <div class=campo-perguntas>
                             <section class="pergunta">
                                 <h5 class="assunto">Assunto da pergunta aparece aqui</h5>
                                 <h6 class="nome">Carlos Henrique Santos</h6>
                                 <p class= "texto-pergunta">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo</p>
                                 <div class ="acoes">
-                                    <img style ="margin-right: 1%;" src= "./imagens/mais informações.png">
+                                    <img style ="margin-right: 2%;" src= "./imagens/mais informações.png">
                                     <img src="./imagens/favoritar.png">
                                     <p class ="likes">1 like</p>
-                                    <p class ="respostas">1 resposta</p>
+                                    <button class ="botao-respostas" type="button" onclick="topicoExpandido()">1 resposta</button>
+                                </div>
+                                <div id="cardTopico">
+                                    <section style="background-color: #F8F8F8; border: 1px solid #E7E7E7;">
+                                        <h6 class="nome" style="margin-top: 2%">Adriana da Silva</h6>
+                                        <p class= "texto-pergunta" style="margin-bottom: 2%;">
+                                            Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado
+                                            impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo
+                                            formativo situado impacto de processo formativo processo.
+                                        </p>
+                                    </section>
                                 </div>
                             </section>
                             
                             <section class="pergunta">
                                 <h5 class="assunto">Assunto da pergunta aparece aqui</h5>
                                 <h6 class="nome">Carlos Henrique Santos</h6>
-                                <p class ="texto-pergunta">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo</p>
+                                <p class ="texto-pergunta">
+                                    Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo
+                                    situado impacto de processo formativo processo
+                                </p>
                                 <div class ="acoes">
-                                    <img style ="margin-right: 1%;" src= "./imagens/mais informações.png">
+                                    <img style ="margin-right: 2%;" src= "./imagens/mais informações.png">
                                     <img src="./imagens/favoritar.png">
                                     <p class ="likes">1 like</p>
-                                    <p class ="respostas">1 resposta</p>
+                                    <button class ="botao-respostas" type="button" onclick="topicoExpandido()">4 respostas</button>
+                                </div>
+                                <div id="cardTopico2">
+                                    <section style="background-color: #F8F8F8; border: 1px solid #E7E7E7;">
+                                        <h6 class="nome" style="margin-top: 2%">Adriana da Silva</h6>
+                                        <p class= "texto-pergunta" style="margin-bottom: 2%;">
+                                            Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo
+                                            situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto
+                                            de processo formativo situado impacto de processo formativo processo.
+                                        </p>
+                                    </section>
+                                    <section style="background-color: #fff; border: 1px solid #E7E7E7;">
+                                        <h6 class="nome" style="margin-top: 2%">Carlos Henrique Santos</h6>
+                                        <p class= "texto-pergunta" style="margin-bottom: 2%;">
+                                            Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo
+                                             situado impacto de processo formativo.Obrigada pela resposta, muito interessante o seu trabalho!
+                                        </p>
+                                    </section>
+                                    <section style="background-color: #F8F8F8; border: 1px solid #E7E7E7;">
+                                        <h6 class="nome" style="margin-top: 2%">Carmila Ferreira Andrade</h6>
+                                        <p class= "texto-pergunta" style="margin-bottom: 2%;">
+                                            Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo 
+                                            formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da 
+                                            dimensão e impacto de processo formativo situado impacto de processo formativo processo.Situado impacto de 
+                                            processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo 
+                                            formativo situado impacto de processo formativo processo.
+                                        </p>
+                                    </section>
+                                    <section style="background-color: #F8F8F8; border: 1px solid #E7E7E7;">
+                                        <h6 class="nome" style="margin-top: 2%">Ana Carolina</h6>
+                                        <p class= "texto-pergunta" style="margin-bottom: 2%;">
+                                                Resposta do autor é aqui.
+                                                Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo
+                                                situado impacto de processo formativo processo resente relato inscreve-se no campo
+                                                da análise da dimensão e impacto de processo formativo situado impacto de processo formativo
+                                                processo.
+                                            </p>
+                                    </section>
                                 </div>
                             </section>
                         </div>     
@@ -259,7 +274,7 @@
                                     <textarea id="conteudo" name="experiencia" data-toggle=""></textarea> 
                                     <br>
                                     <div class ="div-botao-formulario">
-                                        <button class="botao-formulario" type="submit">Enviar</button>
+                                        <button class="botao-formulario" type="button" onclick="enviaFeedback()">Enviar</button>
                                     </div>
                                 </div> 
                             </form>
@@ -276,7 +291,17 @@
                                     <img style ="margin-right: 1%;" src= "./imagens/mais informações.png">
                                     <img src="./imagens/favoritar.png">
                                     <p class ="likes">1 like</p>
-                                    <p class ="respostas">1 resposta</p>
+                                    <button class ="botao-respostas" type="button" onclick="topicoExpandido()">1 resposta</button>
+                                </div>
+                                <div id="cardTopico">
+                                    <section style="background-color: #F8F8F8; border: 1px solid #E7E7E7;">
+                                        <h6 class="nome" style="margin-top: 2%">Adriana da Silva</h6>
+                                        <p class= "texto-pergunta" style="margin-bottom: 2%;">
+                                            Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado
+                                            impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo
+                                            formativo situado impacto de processo formativo processo.
+                                        </p>
+                                    </section>
                                 </div>
                             </section>
                             
@@ -288,11 +313,172 @@
                                     <img style ="margin-right: 1%;" src= "./imagens/mais informações.png">
                                     <img src="./imagens/favoritar.png">
                                     <p class ="likes">1 like</p>
-                                    <p class ="respostas">1 resposta</p>
+                                    <button class ="botao-respostas" type="button" onclick="topicoExpandido()">4 respostas</button>
+                                </div>
+                                <div id="cardTopico">
+                                    <section style="background-color: #F8F8F8; border: 1px solid #E7E7E7;">
+                                        <h6 class="nome" style="margin-top: 2%">Adriana da Silva</h6>
+                                        <p class= "texto-pergunta" style="margin-bottom: 2%;">
+                                            Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo
+                                            situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto
+                                            de processo formativo situado impacto de processo formativo processo.
+                                        </p>
+                                    </section>
+                                    <section style="background-color: #fff; border: 1px solid #E7E7E7;">
+                                        <h6 class="nome" style="margin-top: 2%">Carlos Henrique Santos</h6>
+                                        <p class= "texto-pergunta" style="margin-bottom: 2%;">
+                                            Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo
+                                             situado impacto de processo formativo.Obrigada pela resposta, muito interessante o seu trabalho!
+                                        </p>
+                                    </section>
+                                    <section style="background-color: #F8F8F8; border: 1px solid #E7E7E7;">
+                                        <h6 class="nome" style="margin-top: 2%">Carmila Ferreira Andrade</h6>
+                                        <p class= "texto-pergunta" style="margin-bottom: 2%;">
+                                            Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo 
+                                            formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da 
+                                            dimensão e impacto de processo formativo situado impacto de processo formativo processo.Situado impacto de 
+                                            processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo 
+                                            formativo situado impacto de processo formativo processo.
+                                        </p>
+                                    </section>
+                                    <section style="background-color: #F8F8F8; border: 1px solid #E7E7E7;">
+                                        <h6 class="nome" style="margin-top: 2%">Ana Carolina</h6>
+                                        <p class= "texto-pergunta" style="margin-bottom: 2%;">
+                                                Resposta do autor é aqui.
+                                                Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo
+                                                situado impacto de processo formativo processo resente relato inscreve-se no campo
+                                                da análise da dimensão e impacto de processo formativo situado impacto de processo formativo
+                                                processo.
+                                            </p>
+                                    </section>
                                 </div>
                             </section>
                         </div>     
                     </div>
+
+                    <!-- envia feedback -->
+                    <div id="feedbackEnviado">
+                        <div class ="bloco-feedback">
+                            <h4 class ="titulo-discussao">Discussões</h4>
+                        </div>
+                        <div>
+                            <h5 class ="topico-enviado">Seu tópico foi enviado com sucesso! :D</h5>
+                        </div>
+
+                        <div class ="agradecimento">
+                            <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+                        </div>
+
+                        <div class= "descobrir-trabalhos">
+                            <a href="trabalhos.html" style="text-decoration: none;color: #F48F44;">Descubra outros trabalhos!</a>
+                        </div>
+                        <hr>
+                        <div>
+                            <button class ="botao-topico" type="button" onclick="criaTopico()"><img  width="15px" style="margin-right:3px;" src= "./imagens/icon - criar.png">criar novo tópico</button>
+                        </div>
+
+                        <div class="campo-pergunta-nova">
+                            <section class="pergunta">
+                                <h5 class="assunto">Assunto da pergunta aparece aqui</h5>
+                                <h6 class="nome">Carlos Henrique Santos</h6>
+                                <p class= "texto-pergunta">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo</p>
+                                <div class ="acoes">
+                                    <img style ="margin-right: 1%;" src= "./imagens/mais informações.png">
+                                    <img src="./imagens/favoritar.png">
+                                    <p class ="likes">1 like</p>
+                                    <p class ="respostas">1 resposta</p>
+                                </div>
+                            </section>
+                        </div>
+
+                        <div class="div-sobreposta">
+                            <div class ="imagem-aguardando">
+                                <img src="./imagens/waiting.png">
+                            </div>
+                           <div>
+                            <h5 class = "aguardando">Aguardando feedback dos autores</h5>
+                            <div>
+                                <p class= "editar-topico"><ins>Editar tópico</ins></p>
+                            </div>
+                           </div>
+                           
+                        </div>
+
+                        <div class=campo-perguntas>
+                            <section class="pergunta">
+                                <h5 class="assunto">Assunto da pergunta aparece aqui</h5>
+                                <h6 class="nome">Carlos Henrique Santos</h6>
+                                <p class= "texto-pergunta">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo</p>
+                                <div class ="acoes">
+                                    <img style ="margin-right: 1%;" src= "./imagens/mais informações.png">
+                                    <img src="./imagens/favoritar.png">
+                                    <p class ="likes">1 like</p>
+                                    <button class ="botao-respostas" type="button" onclick="topicoExpandido()">1 resposta</button>
+                                </div>
+                                <div id="cardTopico">
+                                    <section style="background-color: #F8F8F8; border: 1px solid #E7E7E7;">
+                                        <h6 class="nome" style="margin-top: 2%">Adriana da Silva</h6>
+                                        <p class= "texto-pergunta" style="margin-bottom: 2%;">
+                                            Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado
+                                            impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo
+                                            formativo situado impacto de processo formativo processo.
+                                        </p>
+                                    </section>
+                                </div>
+                            </section>
+                            
+                            <section class="pergunta">
+                                <h5 class="assunto">Assunto da pergunta aparece aqui</h5>
+                                <h6 class="nome">Carlos Henrique Santos</h6>
+                                <p class ="texto-pergunta">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo</p>
+                                <div class ="acoes">
+                                    <img style ="margin-right: 1%;" src= "./imagens/mais informações.png">
+                                    <img src="./imagens/favoritar.png">
+                                    <p class ="likes">1 like</p>
+                                    <button class ="botao-respostas" type="button" onclick="topicoExpandido()">4 respostas</button>
+                                </div>
+                                <div id="cardTopico">
+                                    <section style="background-color: #F8F8F8; border: 1px solid #E7E7E7;">
+                                        <h6 class="nome" style="margin-top: 2%">Adriana da Silva</h6>
+                                        <p class= "texto-pergunta" style="margin-bottom: 2%;">
+                                            Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo
+                                            situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto
+                                            de processo formativo situado impacto de processo formativo processo.
+                                        </p>
+                                    </section>
+                                    <section style="background-color: #fff; border: 1px solid #E7E7E7;">
+                                        <h6 class="nome" style="margin-top: 2%">Carlos Henrique Santos</h6>
+                                        <p class= "texto-pergunta" style="margin-bottom: 2%;">
+                                            Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo
+                                             situado impacto de processo formativo.Obrigada pela resposta, muito interessante o seu trabalho!
+                                        </p>
+                                    </section>
+                                    <section style="background-color: #F8F8F8; border: 1px solid #E7E7E7;">
+                                        <h6 class="nome" style="margin-top: 2%">Carmila Ferreira Andrade</h6>
+                                        <p class= "texto-pergunta" style="margin-bottom: 2%;">
+                                            Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo 
+                                            formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da 
+                                            dimensão e impacto de processo formativo situado impacto de processo formativo processo.Situado impacto de 
+                                            processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo 
+                                            formativo situado impacto de processo formativo processo.
+                                        </p>
+                                    </section>
+                                    <section style="background-color: #F8F8F8; border: 1px solid #E7E7E7;">
+                                        <h6 class="nome" style="margin-top: 2%">Ana Carolina</h6>
+                                        <p class= "texto-pergunta" style="margin-bottom: 2%;">
+                                                Resposta do autor é aqui.
+                                                Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo
+                                                situado impacto de processo formativo processo resente relato inscreve-se no campo
+                                                da análise da dimensão e impacto de processo formativo situado impacto de processo formativo
+                                                processo.
+                                            </p>
+                                    </section>
+                                </div>
+                            </section>
+                        </div>     
+                    </div>
+
+                    <!-- envia feedback -->
 
                     <footer class ="rodape">
                         <img src="./imagens/imagem - footer.png">
