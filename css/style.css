@@ -13,6 +13,11 @@ body {
     width: 100%;
 }
 
+.titulo-principal {
+    display: flex;
+    flex-direction: column;
+}
+
 .cabecalho{
     font-family: 'Roboto', sans-serif;
     color:  #725C5C;
@@ -27,26 +32,29 @@ body {
 
 
 .titulo-h6 {
+    display: flex;
     font-weight: 400;
     font-size: 14px;
-    margin-top: 0px;
+    margin-bottom: 0%;
+    margin-top: 5%;
     margin-left: 3%;
 }
 
 
 .titulo-h3 {
+    display: flex;
     font-weight: 400;
     font-size: 22px;
-    margin-top: -30px;
+    margin-top: 1%;
+    margin-bottom: 4%;
     margin-left: 3%;
-    margin-right: -3%
+    margin-right: -3%;
 }
 
 .titulo-numero {
     font-weight: 400;
     font-size: 14px;
-    margin-top: -18px;
-    margin-bottom: 0px;
+    margin-top: -3%;
     margin-left: 3%;
 }
 
@@ -120,7 +128,7 @@ body {
 
 
 .slaca-titulo{
-    height: 80px;
+    height: 4.3%;
     text-align: center;
     padding: 0.1px;
     background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
@@ -132,7 +140,7 @@ body {
 
 
 #logo {
-    width: 200px;
+    width: 100%;
 }
 
 
@@ -153,19 +161,42 @@ hr {
 
 
 .menu a{
-    margin-left: 10px;
+    margin-left: 6%;
     text-decoration: none;
     color:#725C5C;
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
 }
 
+.link1{
+    display: flex;
+    flex-direction: column;
+    border: 0px 1px 1px 1px solid #E7E7E7;
+    padding: 2%;
+}
+
+.link1:hover{
+    background-color: #FDF1EB;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #E7E7E7;
+    padding: 2%;
+}
+
 .opcao-selecionada {
+    display: flex;
+    flex-direction: column;
     background-color: #FDF1EB; 
     border-left: solid;
     border-left-color: #ED7839;
-    
-    
+    padding: 2%;
+}
+
+.links:hover{
+    background-color: #FDF1EB;
 }
 
 .todo-conteudo{
@@ -673,12 +704,12 @@ hr{
 
 .div-sobreposta{
     background-color: rgb(221, 221, 221, 0.9);
-    margin-top: -11.1%;
+    margin-top: -12.1%;
     display: flex;
     flex-direction: column;
     width: 95%;
     align-items: center;
-    padding: 17px 0px;
+    padding: 22px 0px;
     margin-bottom: -2%;
     border-radius: 4px;
     border: 1px solid #E7E7E7;
