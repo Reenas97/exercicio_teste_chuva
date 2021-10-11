@@ -9,7 +9,7 @@
     </head>
     <body>
         <div class = "conteudo">
-            <nav class = "menu">
+            <nav id = "menu" class = "menu">
                 <div class="slaca-titulo">
                     <h2>SLACA 2019</h2>
                 </div>
@@ -40,15 +40,11 @@
                 <div class ="links">
                     <a href="contato.html">Contato</a>
                 </div>
-                <br> <br> <br> <br>
-                <br> <br> <br> <br>
-                <br> <br> <br> <br>
-                <br> <br> <br> <br>
-                <br> <br> <br> <br>
                 
             </nav>
             <div class ="conteudo-principal">
                 <header class= "cabecalho">
+                    <button class ="botao-menu" type="button" onclick ="mostraMenu()"> <img style="width: 40px; height: 30px;" src ="./imagens/mobile-menu-icon.svg"> </button>
                     <div class = "titulo-principal">
                         <h6 class = "titulo-h6">Anais do Simpósio Latino Americano de Ciências de Alimentos</h6>
                         <h3 class ="titulo-h3">Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</h3>
@@ -66,6 +62,7 @@
                             <p class ="email">alguem12@galoacience.com</p>
                             </div>
                             <img class = "foto-perfil" src="./imagens/foto.png">
+                            <img class = "aviso-notificacao"src="./imagens/notification badge.png">
                         </div>
                     
                 </header>
@@ -188,7 +185,16 @@
                                 </div>
                                 <div id="cardTopico">
                                     <section style="background-color: #F8F8F8; border: 1px solid #E7E7E7;">
-                                        <h6 class="nome" style="margin-top: 2%">Adriana da Silva</h6>
+                                        <div class= "autor">
+                                            <h6 class="nome" style="margin-top: 2%">Adriana da Silva</h6>
+                                            <div class = "autor-detalhes">
+                                                <p>Autor</p>
+                                                <div style="margin-top: 20%; margin-left: 20%;">
+                                                    <img style ="height: 20px" src="./imagens/verificado autor.png">
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
                                         <p class= "texto-pergunta" style="margin-bottom: 2%;">
                                             Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado
                                             impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo
@@ -209,11 +215,21 @@
                                     <img style ="margin-right: 2%;" src= "./imagens/mais informações.png">
                                     <img src="./imagens/favoritar.png">
                                     <p class ="likes">1 like</p>
-                                    <button class ="botao-respostas" type="button" onclick="topicoExpandido()">4 respostas</button>
+                                    <button class ="botao-respostas2" type="button" onclick="topicoExpandido2()">4 respostas</button>
                                 </div>
                                 <div id="cardTopico2">
                                     <section style="background-color: #F8F8F8; border: 1px solid #E7E7E7;">
-                                        <h6 class="nome" style="margin-top: 2%">Adriana da Silva</h6>
+                                        <div class= "autor">
+                                            <h6 class="nome" style="margin-top: 2%">Adriana da Silva</h6>
+                                            <div class = "autor-detalhes">
+                                                <p>Autor</p>
+                                                <div style="margin-top: 20%; margin-left: 20%;">
+                                                    <img style ="height: 20px" src="./imagens/verificado autor.png">
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        
                                         <p class= "texto-pergunta" style="margin-bottom: 2%;">
                                             Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo
                                             situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto
@@ -228,7 +244,16 @@
                                         </p>
                                     </section>
                                     <section style="background-color: #F8F8F8; border: 1px solid #E7E7E7;">
-                                        <h6 class="nome" style="margin-top: 2%">Carmila Ferreira Andrade</h6>
+                                        <div class= "autor">
+                                            <h6 class="nome" style="margin-top: 2%">Carmila Ferreira Andrade</h6>
+                                            <div class = "autor-detalhes" style="margin-left:75%">
+                                                <p style="margin-right: 0%">Autor</p>
+                                                <div style="margin-top: 20%; margin-left: 20%;">
+                                                    <img style ="height: 20px" src="./imagens/verificado autor.png">
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
                                         <p class= "texto-pergunta" style="margin-bottom: 2%;">
                                             Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo 
                                             formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da 
@@ -238,7 +263,16 @@
                                         </p>
                                     </section>
                                     <section style="background-color: #F8F8F8; border: 1px solid #E7E7E7;">
-                                        <h6 class="nome" style="margin-top: 2%">Ana Carolina</h6>
+                                        <div class= "autor">
+                                            <h6 class="nome" style="margin-top: 2%">Ana Carolina</h6>
+                                            <div class = "autor-detalhes" style="margin-left:82%">
+                                                <p style="margin-right: -4%">Autor</p>
+                                                <div style="margin-top: 20%; margin-left: 20%;">
+                                                    <img style ="height: 20px" src="./imagens/verificado autor.png">
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
                                         <p class= "texto-pergunta" style="margin-bottom: 2%;">
                                                 Resposta do autor é aqui.
                                                 Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo
@@ -274,6 +308,8 @@
                                     <textarea id="conteudo" name="experiencia" data-toggle="" required></textarea> 
                                     <br>
                                     <div class ="div-botao-formulario">
+                                        <img style = "height: 15px; margin-top: 0.5%; margin-left: 2%;" src="./imagens/negrito.png">
+                                        <img style ="height: 15px; margin-top: 0.5%; margin-left: 2%;" src="./imagens/italico.png">
                                         <button class="botao-formulario" type="button" onclick="enviaFeedback()">Enviar</button>
                                     </div>
                                 </div> 
@@ -379,14 +415,14 @@
 
                         <div class="campo-pergunta-nova">
                             <section class="pergunta">
-                                <h5 class="assunto">Assunto da pergunta aparece aqui</h5>
-                                <h6 class="nome">Carlos Henrique Santos</h6>
-                                <p class= "texto-pergunta">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo</p>
+                                <h5 id="assuntoNovo" class="assunto"></h5>
+                                <h6 class="nome">Renata Sanchez</h6>
+                                <p id = "perguntaNova"class= "texto-pergunta"></p>
                                 <div class ="acoes">
                                     <img style ="margin-right: 1%;" src= "./imagens/mais informações.png">
                                     <img src="./imagens/favoritar.png">
-                                    <p class ="likes">1 like</p>
-                                    <p class ="respostas">1 resposta</p>
+                                    <p class ="likes">0 likes</p>
+                                    <button class ="botao-respostas" type="button" onclick="topicoExpandido()">0 respostas</button>
                                 </div>
                             </section>
                         </div>
@@ -480,14 +516,12 @@
 
                     <!-- envia feedback -->
 
-                    <footer class ="rodape">
-                        <img src="./imagens/imagem - footer.png">
-                    </footer>
                 </div>
+                <footer class ="rodape">
+                    <img class = "imagem-rodape" src="./imagens/imagem - footer.png">
+                </footer>
             </div>
-            
         </div>
-        
 
         <script src="./js/script.js"></script>
     </body>

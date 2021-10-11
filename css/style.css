@@ -5,12 +5,23 @@ body {
     padding: 0px;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .conteudo {
     display: flex;
+    width: 100%;
+}
+
+.botao-menu{
+    display: none;
 }
 
 .conteudo-principal {
     width: 100%;
+    padding-left: 20%;
 }
 
 .titulo-principal {
@@ -22,7 +33,8 @@ body {
     font-family: 'Roboto', sans-serif;
     color:  #725C5C;
     background-color: #FDF1EB;
-    height: 80px;
+    max-height: 4.5%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -118,17 +130,26 @@ body {
 
 
 .foto-perfil{
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 100px;
     margin-left: 5%;
-    margin-top: 10%;
+    margin-top: 8%;
+}
+
+.aviso-notificacao{
+    width: 15px;
+    height: 15px;
+    z-index: 10;
+    margin-top: 8%;
+    margin-left: -4%;
+
 }
 
 
 
 .slaca-titulo{
-    height: 4.3%;
+    max-height: 4.4%;
     text-align: center;
     padding: 0.1px;
     background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
@@ -146,10 +167,14 @@ body {
 
 
 .menu{
-    display:block;
-    width: 15%;
+    display:flex;
+    flex-direction:column;
+    width: 20%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     z-index: 10;
+    position: fixed;
+    top: 0;
+    padding-bottom: 10vh;
 }
 
 hr {
@@ -206,7 +231,6 @@ hr {
 
 .video-detalhes{
     display: flex;
-    
 }
 
 .titulo-video{
@@ -234,7 +258,7 @@ hr {
 
 .bloco-botoes{
     display: flex;
-    margin-left: 17.5%;
+    margin-left: 7.5%;
 }
 
 .botao-download{
@@ -245,7 +269,7 @@ hr {
     padding: 8px;
 }
 
-.botao-download:hover {
+.botao-download:hover, .botao-favorito:hover, .botao-doi:hover {
     cursor: pointer;
     background-color: #f68e56;
 
@@ -262,10 +286,6 @@ hr {
     margin-right: 10px
 }
 
-.botao-favorito:hover {
-    cursor: pointer;
-    background-color: #f68e56;
-}
 
 .botao-doi{
     background: #ED7839;
@@ -275,17 +295,13 @@ hr {
     width: 45px;
 }
 
-.botao-doi:hover {
-    cursor: pointer;
-    background-color: #f68e56;
-}
 
 .citar-trabalho{
     font-family: 'Roboto', sans-serif;
     color: #ED7839;
     font-size: 14px;
     font-weight: 500;
-    margin-left: 17.5%;
+    margin-left: 7.5%;
 }
 
 .bloco-detalhes{
@@ -487,7 +503,7 @@ hr {
     display: flex;
     flex-direction: column;
     width: 90%;
-    margin-left: -60%;
+    margin-left: -55%;
 }
 
 .label {
@@ -500,7 +516,7 @@ hr {
 #assunto {
     border: 1px solid #CCCCCC;
     border-radius: 3px;
-    width: 237%;
+    width: 228%;
     margin-bottom: 10px;
     padding: 10px;
 }
@@ -508,7 +524,7 @@ hr {
 #conteudo{
     border: 1px solid #CCCCCC;
     border-radius: 3px;
-    width: 237%;
+    width: 228%;
     height: 30%;
     padding: 20px 10px;
     resize: none;
@@ -522,7 +538,7 @@ hr {
     border: 1px solid #CCCCCC;
     box-sizing: border-box;
     border-radius: 0px 0px 4px 4px;
-    width: 237%;
+    width: 228%;
     margin-top: 0px;
 
 }
@@ -533,7 +549,7 @@ hr {
     background: linear-gradient(180deg, #FEB154 0%, #F1833E 100%);
     color: #fff;
     border-radius: 0px 0px 4px 0px;
-    margin-left: 82.8%;
+    margin-left: 73.6%;
     border: none;
     padding: 5px 80px;
 }
@@ -600,6 +616,26 @@ hr{
     margin-left: 2%;
 }
 
+.autor {
+    color: #5C5C5C;
+    font-size: 12px; 
+    font-weight: 600;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    display: flex; 
+}
+
+.autor-detalhes{
+    color:  #ED7839; 
+    font-size: 14px; 
+    font-weight: 700;
+    display: flex;
+    margin-top: 0.5%;
+    margin-bottom: -10%;
+    margin-left: 80%;
+}
+
 .texto-pergunta{
     color: #4D4D4D;
     font-size: 14px;
@@ -609,13 +645,30 @@ hr{
     margin-bottom: 0%;
 }
 
+#perguntaNova{
+    color: #4D4D4D;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 0%;
+    margin-left: 2%;
+    margin-bottom: 0%;
+}
+
+#assuntoNovo{
+    border: none;
+    border-radius: 3px;
+    width: 228%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
 .acoes{
     display: flex;
     align-items: center;
     margin-left: 2%;
 }
 
-.botao-respostas{
+.botao-respostas, .botao-respostas2{
     font-family: 'Quicksand', sans-serif;
     font-size: 14px;
     color: #757575;
@@ -624,7 +677,7 @@ hr{
     margin-left: 2%;
 }
 
-.botao-respostas:hover{
+.botao-respostas:hover, .botao-respostas2:hover{
     cursor: pointer;
 }
 
@@ -633,12 +686,6 @@ hr{
     color: #757575;
     margin-left: 2%;
 }
-
-/* .respostas{
-    font-size: 14px;
-    color: #757575;
-    margin-left: 2%;
-} */
 
 #feedbackEnviado{
     /* display: flex; */
@@ -704,12 +751,12 @@ hr{
 
 .div-sobreposta{
     background-color: rgb(221, 221, 221, 0.9);
-    margin-top: -12.1%;
+    margin-top: -13.1%;
     display: flex;
     flex-direction: column;
     width: 95%;
     align-items: center;
-    padding: 22px 0px;
+    padding: 24px 0px;
     margin-bottom: -2%;
     border-radius: 4px;
     border: 1px solid #E7E7E7;
@@ -746,3 +793,368 @@ hr{
     margin-top: 3%;
     margin-left: 3%;
 }
+
+
+@media (max-width: 1300px){
+   .conteudo{
+       display: flex;
+       margin: center;
+   }
+
+   .menu{
+       width: 15%;
+       padding-bottom: 15vh;
+       margin-left: 1%;
+   }
+
+   .slaca-titulo {
+       padding: 11.6px;
+       font-size: 16px;
+
+   }
+
+   .titulo-principal{
+       width: unset;
+   }
+   .conteudo-principal{
+       padding-left: 15%;
+   }
+
+   .titulo-h3{
+       font-size: 16px;
+   }
+
+   .login {
+       margin-left: 0%;
+   }
+
+   .botao-idiomas {
+       margin-left: -5%;
+   }
+
+   .lista-idiomas {
+       margin-left: -80px;
+   }
+   
+
+   .video-detalhes {
+       flex-direction: column;
+       margin-left: 10%;
+       margin-top: 4%;
+       width: 100%;
+       
+   }
+
+   .bloco-botoes{
+       margin-left: 24%;
+       margin-top: 2%;
+   }
+
+   .citar-trabalho{
+       margin-left: 24%;
+   }
+   .bloco-detalhes {
+        width: 74%;
+        margin-left: -1%;
+        margin-top: 0%;
+   }
+
+   .resumo, #discussao, #divFormulario, #feedbackEnviado {
+       width: 80%;
+       margin-left: 10%;
+   }
+
+   .formulario {
+    width: 58%;
+    margin-left: -18%;
+   }
+   .div-botao-formulario{
+       width: 190%;
+   }
+
+   .div-sobreposta{
+        margin-top: -16.1%
+   }
+
+   .autor-detalhes{
+       display: none;
+   }
+
+   .imagem-rodape{
+       width: 100%;
+   }
+
+}
+
+
+
+@media (max-width: 1000px){
+    .conteudo{
+        display: flex;
+        margin: center;
+    }
+ 
+    .menu{
+        display: none;
+        position: absolute;
+        background-color: #FFF;
+        margin-top: 10%;
+        padding-bottom: 0%;
+        width: 28%;
+    }
+
+    .botao-menu{
+        display: flex;
+        margin-left: 10%;
+        height: 55px;
+        width: 55px;
+        margin-left: 6%;
+        margin-top: 3%;
+        background-color: #FDF1EB;
+        border: none;  
+    }
+
+
+ 
+    .botao-menu:hover{
+        cursor: pointer;
+        background-color: #e9ddd7;
+        border-radius: 4px;
+        padding: 1% 1% 2% 1%;
+    }
+
+    #logo{
+        display: none;
+    }
+ 
+    .slaca-titulo {
+        padding: 0%;
+        font-size: 14px;
+ 
+    }
+ 
+    .titulo-principal{
+        width: unset;
+    }
+    .conteudo-principal{
+        padding-left: 0%;
+    }
+ 
+    .titulo-h3{
+        font-size: 18px;
+        margin-left: 0%;
+    }
+
+    .titulo-h6 {
+        font-size: 12px;
+        margin-left: 0%;
+    }
+
+    .titulo-numero {
+        font-size: 12px;
+        margin-left: 0%;
+    }
+ 
+    .login {
+        display: none;
+    }
+
+    .foto-perfil{
+        margin-left: -15px;
+    }
+
+    .aviso-notificacao{
+        margin-left: -14px;
+    }
+
+    
+    .botao-idiomas {
+        display: none;
+    }
+
+    .formulario {
+        width: 40%;
+        margin-left: 0%;
+    }
+
+    .div-botao-formulario{
+        width: 146%;
+    }
+
+    .div-sobreposta{
+        margin-top: -18.1%;
+    }
+}
+
+
+@media (max-width: 600px){
+    .conteudo{
+       display: flex;
+       margin: center;
+       
+   }
+
+   .botao-menu{
+       display: flex;
+       margin-left: 10%;
+       height: 40px;
+       width: 40px;
+       margin-left: 4%;
+       margin-top: 3%;
+       background-color: #FDF1EB;
+       border: none;  
+   }
+
+   .botao-menu:hover{
+       cursor: pointer;
+       background-color: #e9ddd7;
+       border-radius: 4px;
+       padding: 1% 1% 2% 1%;
+   }
+
+   .menu{
+    display: none;
+    position: absolute;
+    background-color: #FFF;
+    margin-top: 16%;
+    padding-bottom: 0%;
+    width: 28%;
+   }
+
+   #logo {
+       display: none;
+   }
+   
+   .slaca-titulo{
+       font-size: 10px;
+   }
+
+   .titulo-principal {
+       width: unset;
+       margin-left: 0%;
+       margin-top: 4%;
+   }
+   .titulo-h3 {
+       font-size: 13px;
+       font-weight: 600;
+       
+   }
+
+   .titulo-h6 {
+    font-size: 11px; 
+    margin-top: 2%;
+    margin-left: 0%;
+}
+
+    .titulo-numero{
+        font-size: 11px;
+    }
+
+    .botao-idiomas{
+        display: none;
+    }
+
+   
+
+    .conteudo-principal{
+        padding: 0%;
+    }
+
+    .bemvindo{
+        font-size: 11px;
+    }
+
+    .email, .bemvindo{
+        display: none;
+    }
+
+    .foto-perfil{
+        margin-left: 12%;
+        margin-top: 4%;
+        width: 30px;
+        height: 30px
+    }
+    .aviso-notificacao{
+        width: 10px;
+        height: 10px;
+        margin-top: 3%;
+        margin-left: -16%;
+    }
+
+    .video-detalhes {
+        flex-direction: column;
+        width: 120%;
+        align-items: center;
+        margin-left: -12%;
+    }
+
+    .titulo-artigo{
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .bloco-botoes{
+        margin-left: 18%;
+    }
+
+    .citar-trabalho{
+        margin-left: 18%;
+    }
+
+    .bloco-detalhes{
+        width: 110%;
+        margin-left: -9%;
+    }
+
+    .botoes-detalhes {
+        margin-left: 9%;
+    }
+
+    .titulo-detalhes, .bloco-resumo, .bloco-discussao, .bloco-formulario, .bloco-feedback {
+        font-size: 16px;
+    }
+
+    .compartilhar{
+        font-size: 15px;
+    }
+
+    .duvida {
+        font-size: 12px;
+    }
+
+    .formulario {
+        margin-left: 4%;
+        width: 38%;
+    }
+
+    .div-botao-formulario {
+        width: 298px;
+    }
+
+    .botao-formulario{
+        margin-left: 34.6%;
+    }
+
+    .assunto {
+        font-size: 14px;
+    }
+
+    .autor-detalhes {
+        display: none;
+    }
+
+    .div-sobreposta {
+        padding: 26px 0px;
+        margin-top: -32.1%;
+
+    }
+
+    .rodape{
+        display: none;
+    }
+
+    .resumo, #discussao, #divFormulario, #feedbackEnviado {
+        width: 80%;
+    }
+}
+
